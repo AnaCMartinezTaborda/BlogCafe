@@ -10,7 +10,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%;  /* 1rem = 10px */
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -174,4 +174,13 @@ img{
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+/** Sobre Nosotros **/
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
